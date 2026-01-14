@@ -11,7 +11,7 @@ const app = express();
 
 // ========== MIDDLEWARE ==========
 app.use(cors({
-    origin: ['https://3k214.dfi.fund', 'http://localhost:3000'],
+    origin: ['https://3kv215.dfi.fund', 'http://localhost:3000'],
     credentials: true
 }));
 app.use(express.json());
