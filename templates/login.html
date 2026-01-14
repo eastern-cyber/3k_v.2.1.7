@@ -159,7 +159,7 @@
                 
                 try {
                     // Always use production URL for now
-                    const apiUrl = 'https://3k214.dfi.fund/api/auth/login';
+                    const apiUrl = '/api/auth/login';  // ใช้ relative URL
                     
                     console.log('Attempting login to:', apiUrl);
                     console.log('Credentials:', { email: this.email });
