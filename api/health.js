@@ -1,4 +1,4 @@
-// api/auth/health.js
+// api/health.js
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -12,8 +12,9 @@ module.exports = async (req, res) => {
   
   res.json({
     success: true,
-    service: 'KokKokKok Auth API',
+    service: 'KokKokKok API v2.1.5',
     status: 'online',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development'
   });
 };
